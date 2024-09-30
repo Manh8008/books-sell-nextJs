@@ -1,3 +1,5 @@
-export const images = {
-    topBanner: '/images/top-banner.jpg'
+const images = {
+    phone: require('./phone.svg').default
 }
+
+export default images

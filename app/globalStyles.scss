@@ -9,11 +9,19 @@
 
 :root {
     --font-family: 'Helvetica Neue', sans-serif;
+    --max-width: 1349px;
+    --content-width: 1140px;
+    --header-height: 172px;
+    --footer-height: 296px;
+    --white-color: #ffffff;
+    --primary-color: #ff7507;
     --text-color: #333333;
 }
 
 html {
     font-size: 62.5%;
+    width: var(--max-width);
+    margin: auto;
 }
 
 body {
@@ -26,10 +34,13 @@ body {
 }
 
 a {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color) !important;
+    text-decoration: none !important;
 }
 
-ul {
+ul,
+ol {
+    margin: 0 !important;
+    padding: 0 !important;
     list-style: none;
 }

@@ -1,0 +1,49 @@
+.wrapper {
+    height: var(--footer-height);
+    background-color: #efefef;
+}
+
+.content {
+    margin: auto;
+    padding: 16px 0;
+    width: var(--content-width);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    font-size: 15px;
+    width: 33.3333%;
+    padding: 0 18px;
+
+    .title {
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+.contact {
+    display: flex;
+
+    .contact-image {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.contact-information {
+    padding-left: 24px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    height: 34px;
+    background-color: #666666;
+    color: var(--white-color);
+
+    & p {
+        margin-top: 6px;
+    }
+}
