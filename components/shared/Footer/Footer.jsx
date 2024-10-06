@@ -1,11 +1,11 @@
 import classNames from 'classnames/bind'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './footer.module.scss'
 import images from '@/public/images'
+import styles from './footer.module.scss'
 const cx = classNames.bind(styles)
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('content')}>
@@ -13,9 +13,10 @@ const Footer = () => {
                     <h4 className={cx('title')}>Về chúng tôi</h4>
                     <ul>
                         <li>
-                            Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê đọc sách trên khắp cả
-                            nước.Chúng tôi sẽ liên tục cập nhật những cuốn sách hay nhất, mới nhất, chất lượng nhất giúp
-                            người đọc có những cuốn sách hay nhất để đọc!
+                            Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê
+                            đọc sách trên khắp cả nước.Chúng tôi sẽ liên tục cập nhật những cuốn
+                            sách hay nhất, mới nhất, chất lượng nhất giúp người đọc có những cuốn
+                            sách hay nhất để đọc!
                         </li>
 
                         <li>Điện thoại: 0352 860 701</li>
@@ -50,7 +51,11 @@ const Footer = () => {
                     <h4 className={cx('title')}>Hotline liên hệ</h4>
                     <ul>
                         <li className={cx('contact')}>
-                            <Image className={cx('contact-image')} src={images.phone} alt="ảnh điện thoại" />
+                            <Image
+                                className={cx('contact-image')}
+                                src={images.phone}
+                                alt="ảnh điện thoại"
+                            />
                             <div className={cx('contact-information')}>
                                 <span className={cx('contact-phone')}>0865587127</span>
                                 <span>(giải đáp thắc mắc 24/24)</span>
@@ -70,5 +75,3 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer

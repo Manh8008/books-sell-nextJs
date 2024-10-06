@@ -1,3 +1,4 @@
+import '@/assets/styles/reset.scss'
 import './global-styles.scss'
 
 export const metadata = {

@@ -1,34 +1,77 @@
+.top-header {
+    img {
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+    }
+}
+
+.mid-header,
+.content {
+    width: 1349px;
+    max-width: calc(100% - 85px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
-    height: var(--header-height);
-    position: relative;
-    margin: auto;
-}
+    .navbar {
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
 
-.content-right {
-    width: var(--content-width);
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: var(--white-color);
+            .logo-img {
+                margin-left: -3px;
+                margin-top: -35px;
+            }
 
-    p {
-        padding-top: 4px;
+            .list {
+                display: flex;
+            }
+        }
     }
 
-    .button {
-        color: var(--white-color);
-        font-weight: 400;
+    .bot-header {
+        background: var(--primary-color);
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 6px 0;
+
+            .cate {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                color: #ffffff;
+                font-weight: 600;
+                margin-right: 66px;
+
+                .cat-icon {
+                    width: 26px;
+                    margin-right: 6px;
+                }
+            }
+
+            ul {
+                display: flex;
+                margin-left: 102px;
+
+                a {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: #ffffff;
+                    padding: 8px 14px;
+
+                    &:hover {
+                        background: #eeeeee;
+                        color: var(--primary-color);
+                        padding: 14px;
+                    }
+                }
+            }
+        }
     }
-}
-
-.header-top {
-    height: 30px;
-    background-color: #ff4c07;
-}
-
-.header-content {
-    height: calc(172px - 30px);
-    background-color: var(--primary-color);
 }

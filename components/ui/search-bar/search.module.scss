@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 518px;
+    margin-top: 8px;
+}
+
+.button {
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    height: 40px;
+    min-width: 50px;
+    border-radius: 0 4px 4px 0;
+    .icon {
+        font-size: 1.6rem;
+        color: var(--white-color);
+    }
+}
