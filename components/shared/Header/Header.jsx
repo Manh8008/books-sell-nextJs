@@ -1,4 +1,3 @@
-import { SupportBar } from './support-bar'
 import { HeaderTop } from './header-top'
 import classNames from 'classnames/bind'
 import styles from './header.module.scss'

@@ -1,5 +1,4 @@
-import { MainLayout } from '@/layouts/main-layout/main-layout'
-import './globalStyles.scss'
+import './global-styles.scss'
 
 export const metadata = {
     title: 'Sách hay',
@@ -9,9 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
-                <MainLayout>{children}</MainLayout>
-            </body>
+            <body>{children}</body>
         </html>
     )
 }

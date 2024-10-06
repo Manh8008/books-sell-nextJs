@@ -13,12 +13,13 @@
     font-size: 14px;
     color: var(--white-color);
 
-    & p {
+    p {
         padding-top: 4px;
     }
 
-    span {
-        padding: 0 8px;
+    .button {
+        color: var(--white-color);
+        font-weight: 400;
     }
 }
 

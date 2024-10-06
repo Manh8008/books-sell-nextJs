@@ -1,12 +1,14 @@
 import { Header } from '@/components/shared/header'
 import { Footer } from '@/components/shared/footer'
 
-export const MainLayout = ({ children }) => {
+const Layout = ({ children }) => {
     return (
-        <div className="main">
+        <div>
             <Header />
             {children}
             <Footer />
         </div>
     )
 }
+
+export default Layout

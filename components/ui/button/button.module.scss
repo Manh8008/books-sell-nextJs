@@ -1,0 +1,101 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 100px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    user-select: none;
+    cursor: pointer;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+// Button types
+.rounded {
+    border-radius: 999px;
+    box-shadow: rgba(232, 80, 34, 0.06) 0px 2px 8px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+        border-color: #ff6007;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+    &:hover {
+        border-color: #ff6007;
+        background: #ff6007;
+        color: var(--white-color);
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+        border-color: var(--primary-color);
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+// Button sizes
+.small {
+    min-width: 88px;
+    font-size: 12px;
+    padding: 13px;
+}
+
+.large {
+    min-width: 140px;
+    padding: 17px;
+}
+
+.text {
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    height: auto;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
